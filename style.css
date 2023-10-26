@@ -43,6 +43,25 @@ header {
   justify-content: space-between;
 }
 
+.mode-change-btn {
+  cursor: pointer;
+  background-color: #242A31;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20%;
+  font-size: 34px;
+  margin-left: 40px;
+}
+.fa-moon {
+  display: block;
+}
+.fa-sun {
+  display: none;
+}
+
 .content1,
 .content2,
 .content3 {
@@ -168,10 +187,6 @@ a.link-edu:hover {
   text-decoration: underline;
   color: #aad3e9;
 }
-
-
-
-
 /* make it reponsive for small widh divicess */
 @media screen and (max-width: 983px) {
 
@@ -187,20 +202,22 @@ a.link-edu:hover {
   .skill-details,
   .projects-details {
     color: white;
-  background-color: #383D45;
-  border-radius: 7px;
-  padding-left: 10px;
-  font-size: 18px;
-  overflow-y: auto;
-  text-align: start;
+    background-color: #383D45;
+    border-radius: 7px;
+    padding-left: 10px;
+    font-size: 18px;
+    text-align: start;
     width: 85%;
+    padding-bottom: 15px;
 
   }
-  .nav-links{
+
+  .nav-links {
     display: none;
   }
+
   .low-priority-text-info {
-    line-height: 35px;
+    line-height: 20px;
     color: #bcc1c6;
     font-size: 16px;
   }
@@ -221,8 +238,6 @@ a.link-edu:hover {
     animation: mobileAnimation 2s ease-in-out infinite;
   }
 }
-
-
 
 @media screen and (max-width: 1318px) {
 

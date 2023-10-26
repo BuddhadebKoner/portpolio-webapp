@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +13,7 @@
 <body>
   <div class="main">
 
-    <header>
+    <header >
 
       <div class="navbar">
        <a class="link-edu nav-links" href="">HOME</a>
@@ -20,16 +22,20 @@
        <a class="link-edu nav-links" href="">PROJECTS</a>
        <a class="link-edu nav-links" href="">ABOUT ME</a>
       </div>
+      <div class="mode-change-btn" id="modeToggle">
+        <i class="fa-regular fa-sun" ></i>
+        <i class="fa-solid fa-moon"></i>
+      </div>
     </header>
 
     <div class="content1">
-
-      <div class="edu-card">
-        <img src="/img/qualificatioon-sec.jpg" alt="img">
+      
+      <div class="edu-card  ">
+        <img src="/img/qualificatioon-sec.webp" alt="img">
         <p class="heading-about qualification-head">QUALIFICATION</p>
       </div>
 
-      <div class="edu-details">
+      <div class="edu-details" id="edu-det-box">
 
 
         <p class="high-priority-text-info">Pursuing B.Tech in Computer Science</p>
@@ -63,7 +69,7 @@
     </div>
 
     <div class="content2">
-      <div class="skill-details">
+      <div class="skill-details  ">
         <p class="high-priority-text-info">Programer</p>
         <p class="low-priority-text-info">
           Web Devalopment :<br>
@@ -85,19 +91,19 @@
       </div>
 
 
-      <div class="skill-card">
-        <img src="/img/skill-edu-sec.jpg" alt="img">
+      <div class="skill-card  ">
+        <img src="/img/skill-edu-sec.webp" alt="img">
         <p class="heading-about skill-head">SKILL</p>
       </div>
     </div>
 
     <div class="content3">
 
-      <div class="projects-card">
-        <img src="/img/project-sec.jpg" alt="img">
+      <div class="projects-card  ">
+        <img src="/img/project-sec.webp" alt="img">
         <p class="heading-about projects-head">PROJECTS</p>
       </div>
-      <div class="projects-details">
+      <div class="projects-details  ">
         <!-- <p class="high-priority-text-info">Pursuing B.Tech in Computer Science</p>
         <p class="low-priority-text-info">
           Sanaka Educational Trust (2022): &emsp;<a class="link-edu"
@@ -131,7 +137,7 @@
   </footer>
 
   </div>
-  <link rel="stylesheet" href="script.js">
+  <script src="script.js"></script>
 </body>
 
 
