@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
 
 * {
   padding: 0;
@@ -18,7 +19,14 @@ body {
   overflow-y: auto;
 }
 
-header {
+/* .light-mode-bg{
+  background-color: white;
+}
+.light-mode-text{
+  color: black ;
+} */
+
+#mode {
   width: 100%;
   height: 70px;
   background-color: #383D45;
@@ -61,6 +69,17 @@ header {
 .fa-sun {
   display: none;
 }
+a.nav-links {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+}
+#navLogo{
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* main containers */
 
 .content1,
 .content2,
@@ -72,6 +91,17 @@ header {
   justify-content: space-evenly;
 }
 
+
+/* my name  */
+.name-head{
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+
+}
+.name-head-spc{
+  font-family: 'Kalam', cursive;
+}
 
 /* for education card --  */
 .edu-card {
@@ -174,15 +204,10 @@ header {
 a.link-edu-spcial {
   font-size: 15px;
 }
-
 a.link-edu {
+  color: #ffffff;
   text-decoration: none;
 }
-
-a.link-edu:visited {
-  color: #ffffff;
-}
-
 a.link-edu:hover {
   text-decoration: underline;
   color: #aad3e9;
@@ -196,6 +221,10 @@ a.link-edu:hover {
   .projects-card {
     display: none;
 
+  }
+  .mode-change-btn{
+    position: absolute;
+    right: 100px;
   }
 
   .edu-details,
