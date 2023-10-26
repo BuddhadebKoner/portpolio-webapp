@@ -1,0 +1,249 @@
+/* google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  height: fit-content;
+  background-color: #242A31;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: #383D45;
+  color: white;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, .349) !important;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 100px;
+  padding-right: 100px;
+
+}
+
+/* nav bar designing */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.content1,
+.content2,
+.content3 {
+  margin-top: 50px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+/* for education card --  */
+.edu-card {
+  background-color: #383D45;
+  width: 400px;
+  height: 460px;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.edu-card img {
+  width: 400px;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 7px;
+}
+
+/* for skill card --- */
+.skill-card {
+  background-color: #383D45;
+  width: 400px;
+  height: 460px;
+  border-top-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.skill-card img {
+  width: 400px;
+  border-top-left-radius: 7px;
+}
+
+/* for projects cards -  */
+.projects-card {
+  background-color: #383D45;
+  width: 400px;
+  height: 460px;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.projects-card img {
+  width: 400px;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 7px;
+}
+
+.heading-about {
+  color: white;
+  font-size: 30px;
+  padding: 6px;
+  text-align: center;
+}
+
+/* this is for imformation boxes */
+
+.edu-details,
+.skill-details,
+.projects-details {
+  /* display: flex;
+  align-items: center; */
+  color: white;
+  background-color: #383D45;
+  border-radius: 7px;
+  padding-left: 35px;
+  font-size: 25px;
+  overflow-y: auto;
+  text-align: start;
+  width: 920px;
+}
+
+
+/* this is for the buttons in the education section  */
+/* .edu-details{
+
+ } */
+
+.edu-det-info {
+  max-height: 450px;
+  padding-top: 20px;
+  overflow-y: auto;
+}
+
+.low-priority-text-info {
+  line-height: 35px;
+  color: #bcc1c6;
+  font-size: 20px;
+}
+
+.high-priority-text-info {
+  text-align: center;
+  line-height: 40px;
+}
+
+
+/* Define styles for links with the class "link-edu" */
+a.link-edu-spcial {
+  font-size: 15px;
+}
+
+a.link-edu {
+  text-decoration: none;
+}
+
+a.link-edu:visited {
+  color: #ffffff;
+}
+
+a.link-edu:hover {
+  text-decoration: underline;
+  color: #aad3e9;
+}
+
+
+
+
+/* make it reponsive for small widh divicess */
+@media screen and (max-width: 983px) {
+
+  /* Styles for mobile screens */
+  .edu-card,
+  .skill-card,
+  .projects-card {
+    display: none;
+
+  }
+
+  .edu-details,
+  .skill-details,
+  .projects-details {
+    color: white;
+  background-color: #383D45;
+  border-radius: 7px;
+  padding-left: 10px;
+  font-size: 18px;
+  overflow-y: auto;
+  text-align: start;
+    width: 600px;
+
+  }
+  .low-priority-text-info {
+    line-height: 35px;
+    color: #bcc1c6;
+    font-size: 16px;
+  }
+
+  /* Keyframes for mobile animation */
+  @keyframes mobileAnimation {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(100px);
+    }
+  }
+
+  .animated-element {
+    animation: mobileAnimation 2s ease-in-out infinite;
+  }
+}
+
+
+
+@media screen and (max-width: 1318px) {
+
+  
+
+  .edu-details,
+  .skill-details,
+  .projects-details {
+    margin-left: 10px;
+    margin-right: 10px;
+
+  }
+
+  /* Keyframes for mobile animation */
+  @keyframes mobileAnimation {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(100px);
+    }
+  }
+
+  .animated-element {
+    animation: mobileAnimation 2s ease-in-out infinite;
+  }
+}
