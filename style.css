@@ -193,8 +193,11 @@ a.link-edu:hover {
   font-size: 18px;
   overflow-y: auto;
   text-align: start;
-    width: 600px;
+    width: 85%;
 
+  }
+  .nav-links{
+    display: none;
   }
   .low-priority-text-info {
     line-height: 35px;
@@ -203,6 +206,7 @@ a.link-edu:hover {
   }
 
   /* Keyframes for mobile animation */
+
   @keyframes mobileAnimation {
     0% {
       transform: translateX(0);
@@ -221,8 +225,6 @@ a.link-edu:hover {
 
 
 @media screen and (max-width: 1318px) {
-
-  
 
   .edu-details,
   .skill-details,
