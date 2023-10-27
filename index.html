@@ -2,151 +2,58 @@
 <html lang="en">
 
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <link rel="stylesheet" href="style.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>buddhadebkoner</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buddhadebkoner</title>
 </head>
 
 <body>
-  <div class="main">
+    <header>
+        <div class="cover-photo">
+            <img src="cover-photo.webp" alt="">
+        </div>
 
-    <div class="header" id="mode">
-      <div class="navbar">
-        <p id="navLogo">&#123;B&#125;</p>
-        <a class="nav-links" href="">WHO I AM</a>
-        <a class="nav-links" href="">PROJECTS</a>
-        <a class="nav-links" href="">CONTACT</a>
-        <a class="nav-links" href="">ABOUT ME</a>
-      </div>
-      <div class="mode-change-btn" id="modeToggle">
-        <i class="fa-regular fa-sun"></i>
-        <i class="fa-solid fa-moon"></i>
-      </div>
-    </div>
-    <h1 class="name-head"><span class="name-head-spc">i am Buddhadeb Koner</span></h1>
-    <div class="content1">
-     
+        <div class="navbar">
+            <a class="nav-links" href="">who am i</a>
+            <a class="nav-links" href="">projects</a>
+            <a class="nav-links" href="">contact</a>
+            <a class="nav-links" href="">about me</a>
+        </div>
 
-      <div class="edu-card">
-        <img src="/img/qualificatioon-sec.webp" alt="img">
-        <p class="heading-about qualification-head">QUALIFICATION</p>
-      </div>
+        <div class="heading">
+            <h1>Wellcome to my Web App</h1>
+            <h1>i am <span id="buddhadebkoner">Buddhadeb Koner</span></h1>
+        </div>
+    </header>
+    <div class="main">
+        <div class="about-heading">
+            <h1>About ME</h1>
+        </div>
+        <div class="about-me">
+            <div class="photo">
+                <img src="buddhadeb.webp" alt="">
+            </div>
+            <div class="details">
 
-      <div class="edu-details" id="edu-det-box">
+                <div class="details-nav">
+                    <button class="button" type="button" id="edu">Education</button>
+                    <button class="button" type="button" id="Skill">Skill</button>
+                </div>
 
-
-        <p class="high-priority-text-info">Pursuing B.Tech in Computer Science</p>
-        <p class="low-priority-text-info">
-          <a class="link-edu" href="https://icampus.setgoi.ac.in/">Sanaka Educational Trust</a> (2022):&emsp;
-          <br>
-          I acquired public speaking skills here<br>
-          Here I created my <a class="link-edu"
-            href="https://www.linkedin.com/in/buddhadeb-koner-8501b3231/">Linkedin</a> account:&emsp;
-
-
-        </p>
-
-        <p class="high-priority-text-info">Higher Secondary: Pure Science</p>
-        <p class="low-priority-text-info">
-          Eral Anchal High School (2020-2022)<br>
-          HS examination - 80%
-
-        </p>
-
-        <p class="high-priority-text-info">Secondary: Unlocking My Potential</p>
-        <p class="low-priority-text-info">
-          Eral Anchal High School (2015-2020)<br>
-          Madhyamik Examination - 80.85%<br>
-          3 year's Quiz Champion<br>
-          Member Of EAHS Football Club
-
-        </p>
-
-      </div>
+                <div class="details-edu details-same-css" id="edu-details">
+                    <h1>this is education </h1>
+                </div>
+                <div class="details-skill details-same-css" id="skill-details">
+                    <h1>this is skill </h1>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="content2">
-      <div class="skill-details  ">
-        <p class="high-priority-text-info">Programer</p>
-        <p class="low-priority-text-info">
-          Web Devalopment :<br>
-          FrontEnd Languages - HTML,&nbsp;&nbsp;CSS,&nbsp;&nbsp;JS,&nbsp;&nbsp;Sheri JS.<br>
-          BackEnd Languages - PHP,&nbsp;&nbsp;MySql.&nbsp;&nbsp;&nbsp;&nbsp;
-          <a class="link-edu link-edu-spcial" href="">Show Projects</a>
-          <br>Data Structure & Algoritham,&nbsp;&nbsp;C++,&nbsp;&nbsp;Basic in PYTHON<br>
-          UX and UI designer :<br>
-          Figma learned from <a class="link-edu"
-            href="https://www.youtube.com/playlist?list=PLlHtucAD9KT19ckHqXpPSStZOyDSq9AW-">Ansh Mehra</a> Youtube
-          cnanal.<br>
-        </p>
-
-        <p class="high-priority-text-info">Content Creater</p>
-
-        <p class="low-priority-text-info">
-          Youtube Chanals: &nbsp;&nbsp;
-          <a class="link-edu" href="https://www.youtube.com/@IShowCode">coding</a>,&nbsp;&nbsp;<a class="link-edu"
-            href="https://www.youtube.com/@battlejeetproduction1182">gaming</a>,&nbsp;&nbsp;<a class="link-edu"
-            href="https://www.youtube.com/@CopyrightTwistMusic">music mixing</a> &nbsp;&nbsp;& &nbsp;&nbsp;<a
-            class="link-edu" href="https://www.youtube.com/@moccreater3884/videos">editing</a>.<br>
-          Instagram : &nbsp;&nbsp;<a class="link-edu" href="https://www.instagram.com/ishow_code/">IShowCode</a>
-        </p>
-
-      </div>
 
 
-      <div class="skill-card  ">
-        <img src="/img/skill-edu-sec.webp" alt="img">
-        <p class="heading-about skill-head">SKILL</p>
-      </div>
-    </div>
-
-    <div class="content3">
-
-      <div class="projects-card  ">
-        <img src="/img/project-sec.webp" alt="img">
-        <p class="heading-about projects-head">PROJECTS</p>
-      </div>
-      <div class="projects-details  ">
-        <!-- <p class="high-priority-text-info">Pursuing B.Tech in Computer Science</p>
-        <p class="low-priority-text-info">
-          Sanaka Educational Trust (2022): &emsp;<a class="link-edu"
-            href="https://icampus.setgoi.ac.in/">Explore</a><br>
-            
-          Here I created my Linkedin account :&emsp;
-          <a class="link-edu" href="https://www.linkedin.com/in/buddhadeb-koner-8501b3231/">Linkedin</a>
-
-        </p>
-
-        <p class="high-priority-text-info">Higher Secondary: Pure Science</p>
-        <p class="low-priority-text-info">
-          Eral Anchal High School (2020-2022)<br>
-          Youtube :&emsp;<a class="link-edu" href="https://www.youtube.com/@IShowCode">IShowCode</a>
-
-        </p>
-
-        <p class="high-priority-text-info">Secondary: Unlocking My Potential</p>
-        <p class="low-priority-text-info">
-          Eral Anchal High School (2015-2020)<br>
-          3 year's Quiz Champion<br>
-          Member Of EAHS Football Club
-
-        </p> -->
-      </div>
-    </div>
-  </div>
-
-  <footer>
-
-  </footer>
-
-  </div>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
-
 
 </html>

@@ -1,295 +1,191 @@
-/* google fonts */
-
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@600&display=swap');
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Lato', sans-serif;
-  width: 100%;
-  height: fit-content;
-  background-color: #242A31;
-  overflow-x: hidden;
-  overflow-y: auto;
+    width: 100%;
+    height: 400vh;
+    overflow-x: hidden;
+    font-family: 'Blinker', sans-serif;
 }
 
-/* .light-mode-bg{
-  background-color: white;
-}
-.light-mode-text{
-  color: black ;
-} */
-
-#mode {
-  width: 100%;
-  height: 70px;
-  background-color: #383D45;
-  color: white;
-  box-shadow: 0 4px 25px rgba(0, 0, 0, .349) !important;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  padding-left: 100px;
-  padding-right: 100px;
-
-}
-
-/* nav bar designing */
-
-.navbar {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.mode-change-btn {
-  cursor: pointer;
-  background-color: #242A31;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20%;
-  font-size: 34px;
-  margin-left: 40px;
-}
-.fa-moon {
-  display: block;
-}
-.fa-sun {
-  display: none;
-}
-a.nav-links {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 20px;
-}
-#navLogo{
-  font-size: 30px;
-  cursor: pointer;
-}
-
-/* main containers */
-
-.content1,
-.content2,
-.content3 {
-  margin-top: 50px;
-  width: 100%;
-  height: fit-content;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-
-/* my name  */
-.name-head{
-  color: white;
-  text-align: center;
-  margin-top: 50px;
-
-}
-.name-head-spc{
-  font-family: 'Kalam', cursive;
-}
-
-/* for education card --  */
-.edu-card {
-  background-color: #383D45;
-  width: 400px;
-  height: 460px;
-  border-top-right-radius: 50%;
-  border-top-left-radius: 7px;
-  border-bottom-right-radius: 7px;
-  border-bottom-left-radius: 7px;
-}
-
-.edu-card img {
-  width: 400px;
-  border-top-right-radius: 50%;
-  border-top-left-radius: 7px;
-}
-
-/* for skill card --- */
-.skill-card {
-  background-color: #383D45;
-  width: 400px;
-  height: 460px;
-  border-top-left-radius: 7px;
-  border-bottom-right-radius: 7px;
-  border-bottom-left-radius: 7px;
-}
-
-.skill-card img {
-  width: 400px;
-  border-top-left-radius: 7px;
-}
-
-/* for projects cards -  */
-.projects-card {
-  background-color: #383D45;
-  width: 400px;
-  height: 460px;
-  border-top-right-radius: 50%;
-  border-top-left-radius: 7px;
-  border-bottom-right-radius: 7px;
-  border-bottom-left-radius: 7px;
-}
-
-.projects-card img {
-  width: 400px;
-  border-top-right-radius: 50%;
-  border-top-left-radius: 7px;
-}
-
-.heading-about {
-  color: white;
-  font-size: 30px;
-  padding: 6px;
-  text-align: center;
-}
-
-/* this is for imformation boxes */
-
-.edu-details,
-.skill-details,
-.projects-details {
-  /* display: flex;
-  align-items: center; */
-  color: white;
-  background-color: #383D45;
-  border-radius: 7px;
-  padding-left: 35px;
-  font-size: 25px;
-  overflow-y: auto;
-  text-align: start;
-  width: 920px;
-}
-
-
-/* this is for the buttons in the education section  */
-/* .edu-details{
-
- } */
-
-.edu-det-info {
-  max-height: 450px;
-  padding-top: 20px;
-  overflow-y: auto;
-}
-
-.low-priority-text-info {
-  line-height: 35px;
-  color: #bcc1c6;
-  font-size: 20px;
-}
-
-.high-priority-text-info {
-  text-align: center;
-  line-height: 40px;
-}
-
-
-/* Define styles for links with the class "link-edu" */
-a.link-edu-spcial {
-  font-size: 15px;
-}
-a.link-edu {
-  color: #ffffff;
-  text-decoration: none;
-}
-a.link-edu:hover {
-  text-decoration: underline;
-  color: #aad3e9;
-}
-/* make it reponsive for small widh divicess */
-@media screen and (max-width: 983px) {
-
-  /* Styles for mobile screens */
-  .edu-card,
-  .skill-card,
-  .projects-card {
-    display: none;
-
-  }
-  .mode-change-btn{
+.cover-photo {
     position: absolute;
-    right: 100px;
-  }
+    top: 0px;
+    width: 100%;
+    z-index: -1;
+}
 
-  .edu-details,
-  .skill-details,
-  .projects-details {
+.cover-photo img {
+    width: 100%;
+    height: 100vh;
+}
+
+/* for navbar */
+.navbar {
+    background: transparent;
+    margin-top: 20px;
+    position: absolute;
+    display: flex;
+    align-items: start;
+    width: 90%;
+    justify-content: space-evenly;
+}
+
+.nav-links {
+    background: transparent;
     color: white;
+    font-size: 25px;
+    transition: box-shadow 0.3s;
+    text-decoration: none;
+}
+
+.nav-links:hover {
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+}
+
+.heading {
+    color: white;
+    position: absolute;
+    top: 400px;
+    left: 200px;
+    font-size: 25px;
+}
+
+#buddhadebkoner {
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+/* main content in the web app */
+
+
+/* about me section  */
+.about-me {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 100vh;
+    background-color: #242A31;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.about-heading {
+    width: 100%;
+    position: absolute;
+    top: 100vh;
+    z-index: 1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 25px;
+}
+
+.photo {
     background-color: #383D45;
-    border-radius: 7px;
-    padding-left: 10px;
-    font-size: 18px;
-    text-align: start;
-    width: 85%;
-    padding-bottom: 15px;
+    width: 400px;
+    height: 400px;
+    margin-right: 50px;
+    border-radius: 50%;
+    border: 5px solid rgb(255, 255, 255);
+}
 
-  }
+.photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
 
-  .nav-links {
+.details {
+    background-color: #383D45;
+    width: 750px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.details-nav{
+    background-color: transparent;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.details-same-css{
+    background-color: aliceblue;
+    margin-top: 30px;
+    width: 90%;
+    height: 70%;   
+    display: block; 
+}
+
+.details-skill{
     display: none;
-  }
-
-  .low-priority-text-info {
-    line-height: 20px;
-    color: #bcc1c6;
-    font-size: 16px;
-  }
-
-  /* Keyframes for mobile animation */
-
-  @keyframes mobileAnimation {
-    0% {
-      transform: translateX(0);
-    }
-
-    100% {
-      transform: translateX(100px);
-    }
-  }
-
-  .animated-element {
-    animation: mobileAnimation 2s ease-in-out infinite;
-  }
 }
 
-@media screen and (max-width: 1318px) {
+/* for details nav buttons  */
+.button {
+    --color: #00A97F;
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+   }
+   
+   .button::before, .button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+   }
+   
+   .button::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   .button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .button:hover::before, .button:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   .button:hover {
+    color: rgb(255, 255, 255);
+   }
+   
+   .button:active {
+    filter: brightness(.8);
+   }
+   
 
-  .edu-details,
-  .skill-details,
-  .projects-details {
-    margin-left: 10px;
-    margin-right: 10px;
-
-  }
-
-  /* Keyframes for mobile animation */
-  @keyframes mobileAnimation {
-    0% {
-      transform: translateX(0);
-    }
-
-    100% {
-      transform: translateX(100px);
-    }
-  }
-
-  .animated-element {
-    animation: mobileAnimation 2s ease-in-out infinite;
-  }
-}
+/* end of button disign */
