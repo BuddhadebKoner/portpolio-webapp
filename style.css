@@ -166,136 +166,6 @@ a.mobile-nav-links {
 
 /* main content in the web app */
 
-/* about me section  */
-.about-me {
-    width: 100%;
-    height: 100%;
-    background-color: #242A31;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    position: absolute;
-    top: 100vh;
-    z-index: 1;
-}
-
-.about-heading {
-    width: 100%;
-    position: absolute;
-    top: 100vh;
-    color: white;
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-    font-size: 22px;
-    z-index: 2;
-}
-
-.photo {
-    background-color: #383D45;
-    width: 300px;
-    height: 300px;
-    margin-right: 50px;
-    border-radius: 50%;
-    border: 5px solid rgb(255, 255, 255);
-}
-
-.photo img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-}
-
-.details {
-    background-color: #383D45;
-    width: 750px;
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.details-nav {
-    background-color: transparent;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 30px;
-}
-
-.details-same-css {
-    background-color: aliceblue;
-    margin-top: 30px;
-    width: 90%;
-    height: 70%;
-    display: block;
-}
-
-.details-skill {
-    display: none;
-}
-
-/* for details nav buttons  */
-.button {
-    --color: #00A97F;
-    padding: 0.8em 1.7em;
-    background-color: transparent;
-    border-radius: .3em;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    transition: .5s;
-    font-weight: 400;
-    font-size: 17px;
-    border: 1px solid;
-    font-family: inherit;
-    text-transform: uppercase;
-    color: var(--color);
-    z-index: 1;
-}
-
-.button::before,
-.button::after {
-    content: '';
-    display: block;
-    width: 50px;
-    height: 50px;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    border-radius: 50%;
-    z-index: -1;
-    background-color: var(--color);
-    transition: 1s ease;
-}
-
-.button::before {
-    top: -1em;
-    left: -1em;
-}
-
-.button::after {
-    left: calc(100% + 1em);
-    top: calc(100% + 1em);
-}
-
-.button:hover::before,
-.button:hover::after {
-    height: 410px;
-    width: 410px;
-}
-
-.button:hover {
-    color: rgb(255, 255, 255);
-}
-
-.button:active {
-    filter: brightness(.8);
-}
-
-
-/* end of button disign */
-
 
 
 /* For screens smaller than 600px (typical for mobile devices) */
@@ -306,14 +176,6 @@ a.mobile-nav-links {
         top: 300px;
         left: 30px;
         font-size: 15px;
-    }
-
-    .photo {
-        display: none;
-    }
-
-    .details {
-        width: 90%;
     }
 
     .special-nav-links {
@@ -351,13 +213,6 @@ a.mobile-nav-links {
         font-size: 20px;
     }
 
-    .photo {
-        display: none;
-    }
-
-    .details {
-        width: 90%;
-    }
 
 }
 
@@ -366,4 +221,16 @@ a.mobile-nav-links {
 
     /* CSS rules for large screens */
 
+}
+
+
+/* main section --  */
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 100vh;
+    z-index: 5;
+    background-color: rgb(3, 5, 5);
 }
