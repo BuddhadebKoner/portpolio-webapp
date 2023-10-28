@@ -1,44 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Blinker:wght@600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  width: 100%;
+  width: 100vw;
   height: fit-content;
   color: #e4bb68;
+  overflow-x: hidden;
 }
 
-header{
+header {
   font-family: 'Blinker', sans-serif;
-    height: 10vh;
-    background: transparent;
-    margin-top: 20px;
-    position: absolute;
-    display: flex;
-    align-items: start;
-    width: 100%;
-    justify-content: space-evenly;
+  height: 10vh;
+  background: transparent;
+  margin-top: 20px;
+  position: absolute;
+  display: flex;
+  align-items: start;
+  width: 100vw;
+  justify-content: space-evenly;
 }
-.nav-links{
-    background: transparent;
-    color: white;
-    font-size: 25px;
-    transition: box-shadow 0.3s;
-    text-decoration: none;
+
+.nav-links {
+  background: transparent;
+  color: white;
+  font-size: 25px;
+  transition: box-shadow 0.3s;
+  text-decoration: none;
 }
-.cover-animaion{
-    background: #282c34;
-    font-size: 2vmin;
-    font-family: JetBrains Mono, monospace;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #e4bb68; 
+
+.cover-animaion {
+  background: #282c34;
+  font-size: 2vmin;
+  font-family: JetBrains Mono, monospace;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e4bb68;
 }
 
 .string {
@@ -93,17 +97,21 @@ header{
     transform: translatey(-5.8vmin);
     opacity: 1;
   }
+
   50% {
     transform: translatey(-11vmin);
   }
+
   75% {
     transform: translatey(-16.5vmin);
   }
 }
 
+/* scroll more  */
+
 
 
 /* for main content in the buttom */
-.main{
-    height: 100vh;
+.main {
+  height: 100vh;
 }
