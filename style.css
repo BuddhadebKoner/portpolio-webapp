@@ -331,8 +331,9 @@ a.mobile-nav-links {
     a.mobile-nav-links {
         display: none;
     }
-
-
+    #head-p{
+        font-size: 15px;
+    }
 
 }
 
@@ -357,6 +358,7 @@ a.mobile-nav-links {
     .details {
         width: 90%;
     }
+
 }
 
 /* For screens larger than 1024px (typical for desktops) */
