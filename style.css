@@ -7,6 +7,7 @@
 }
 
 body {
+    background-color: black;
     width: 100%;
     height: fit-content;
     overflow-x: hidden;
@@ -25,6 +26,7 @@ body {
 
     width: 100%;
     height: 100vh;
+    opacity: 0.5;
 }
 
 /* for navbar */
@@ -150,6 +152,11 @@ a.mobile-nav-links {
     top: 350px;
     left: 200px;
     font-size: 25px;
+}
+#head-p{
+    margin-top: 15px;
+    color: antiquewhite;
+    font-size: 20px;
 }
 
 #buddhadebkoner {
