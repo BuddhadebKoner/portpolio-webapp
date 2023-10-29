@@ -1,236 +1,254 @@
-@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@600&display=swap');
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@600&display=swap");
 
 * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100vw;
+	height: 100vh;
 }
 
 body {
-    background-color: black;
-    width: 100%;
-    height: fit-content;
-    overflow-x: hidden;
-    font-family: 'Blinker', sans-serif;
+	padding: 0px;
+	margin: 0px;
+	background-color: black;
+	background-color: rgb(2, 2, 36);
+	font-family: "Blinker", sans-serif;
 }
-
-.cover-photo {
-
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    z-index: -1;
-}
-
-.cover-photo img {
-
-    width: 100%;
-    height: 100vh;
-    opacity: 0.5;
+/* Set the background image of the whole page and be able to control it's transparency */
+body::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/background-photo.webp);
+	background-position: center;
+	background-size: cover;
+	z-index: -1;
+	opacity: 0.5;
 }
 
 /* for navbar */
 /* for the check box only for mobile  */
 
 .burger {
-    z-index: 4;
-    position: absolute;
-    left: 40px;
-    top: 60px;
-    width: 40px;
-    height: 30px;
-    background: transparent;
-    cursor: pointer;
-    display: none;
+	z-index: 4;
+	position: absolute;
+	left: 40px;
+	top: 60px;
+	width: 40px;
+	height: 30px;
+	background: transparent;
+	cursor: pointer;
+	display: none;
 }
 
 .burger input {
-    display: none;
+	display: none;
 }
 
 .burger span {
-    display: block;
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    background: rgb(255, 255, 255);
-    border-radius: 9px;
-    opacity: 1;
-    left: 0;
-    transform: rotate(0deg);
-    transition: .25s ease-in-out;
+	display: block;
+	position: absolute;
+	height: 4px;
+	width: 100%;
+	background: rgb(255, 255, 255);
+	border-radius: 9px;
+	opacity: 1;
+	left: 0;
+	transform: rotate(0deg);
+	transition: 0.25s ease-in-out;
 }
 
 .burger span:nth-of-type(1) {
-    top: 0px;
-    transform-origin: left center;
+	top: 0px;
+	transform-origin: left center;
 }
 
 .burger span:nth-of-type(2) {
-    top: 50%;
-    transform: translateY(-50%);
-    transform-origin: left center;
+	top: 50%;
+	transform: translateY(-50%);
+	transform-origin: left center;
 }
 
 .burger span:nth-of-type(3) {
-    top: 100%;
-    transform-origin: left center;
-    transform: translateY(-100%);
+	top: 100%;
+	transform-origin: left center;
+	transform: translateY(-100%);
 }
 
-.burger input:checked~span:nth-of-type(1) {
-    transform: rotate(45deg);
-    top: 0px;
-    left: 5px;
+.burger input:checked ~ span:nth-of-type(1) {
+	transform: rotate(45deg);
+	top: 0px;
+	left: 5px;
 }
 
-.burger input:checked~span:nth-of-type(2) {
-    width: 0%;
-    opacity: 0;
+.burger input:checked ~ span:nth-of-type(2) {
+	width: 0%;
+	opacity: 0;
 }
 
-.burger input:checked~span:nth-of-type(3) {
-    transform: rotate(-45deg);
-    top: 28px;
-    left: 5px;
+.burger input:checked ~ span:nth-of-type(3) {
+	transform: rotate(-45deg);
+	top: 28px;
+	left: 5px;
 }
 
 /* end this  */
 
+.site-header {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+/* Navigation links */
+
+.navbar ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
 a.mobile-nav-links {
-    background-color: white;
-    color: black;
-    margin-bottom: 20px;
-    text-align: center;
-    width: 100%;
-    height: 35px;
-    font-size: 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    padding: 4px;
-    /* display: none; */
+	background-color: white;
+	color: black;
+	margin-bottom: 20px;
+	text-align: center;
+	width: 100%;
+	height: 35px;
+	font-size: 20px;
+	border-radius: 10px;
+	text-decoration: none;
+	padding: 4px;
+	/* display: none; */
 }
 
 #dropdown {
-    width: 200px;
-    height: 200px;
-    z-index: 3;
-    background-color: transparent;
-    position: relative;
-    left: 50px;
-    display: none;
-
+	width: 200px;
+	height: 200px;
+	z-index: 3;
+	background-color: transparent;
+	position: relative;
+	left: 50px;
+	display: none;
 }
 
-.navbar {
-    background: transparent;
-    margin-top: 20px;
-    position: absolute;
-    display: flex;
-    align-items: start;
-    width: 90%;
-    justify-content: space-evenly;
+.navbar > ul {
+	background: transparent;
+	margin-top: 20px;
+	display: flex;
+	align-items: start;
+	width: 100%;
+	justify-content: space-evenly;
 }
 
 .nav-links {
-    background: transparent;
-    color: white;
-    font-size: 25px;
-    transition: box-shadow 0.3s;
-    text-decoration: none;
+	background: transparent;
+	color: white;
+	font-size: 25px;
+	transition: box-shadow 0.3s;
+	text-decoration: none;
 }
 
 .nav-links:hover {
-    text-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+	text-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
 }
 
 .heading {
-    color: white;
-    width: fit-content;
-    height: fit-content;
-    position: absolute;
-    top: 40vh;
-    left: 15vw;
-    font-size: 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	width: fit-content;
+	height: fit-content;
+	font-size: 25px;
 }
-#head-p{
-    margin-top: 15px;
-    color: antiquewhite;
-    font-size: 20px;
+#head-p {
+	margin-top: 15px;
+	color: antiquewhite;
+	font-size: 20px;
+	width: 50%;
 }
 
 #buddhadebkoner {
-    color: rgb(255, 0, 0);
-    cursor: pointer;
+	color: rgb(255, 0, 0);
+	cursor: pointer;
 }
 
 /* main content in the web app */
 
-
-
 /* For screens smaller than 600px (typical for mobile devices) */
 @media (max-width: 672px) {
+	/* CSS rules for smaller screens */
+	.heading {
+		top: 300px;
+		left: 30px;
+		font-size: 15px;
+	}
 
-    /* CSS rules for smaller screens */
-    .heading {
-        top: 300px;
-        left: 30px;
-        font-size: 15px;
-    }
+	.special-nav-links {
+		display: none;
+	}
 
-    .special-nav-links {
-        display: none;
-    }
+	.burger {
+		display: block;
+	}
 
-    .burger {
-        display: block;
-    }
+	#dropdown {
+		display: none;
+	}
 
-    #dropdown {
-        display: none;
-    }
-
-    a.mobile-nav-links {
-        display: none;
-    }
-    #head-p{
-        font-size: 15px;
-    }
-
+	a.mobile-nav-links {
+		display: none;
+	}
+	#head-p {
+		font-size: 15px;
+	}
 }
 
 /* For screens between 601px and 1024px (typical for tablets) */
 @media (min-width: 672px) and (max-width: 1024px) {
+	/* CSS rules for medium-sized screens */
+	body {
+		overflow-x: hidden;
+	}
 
-    /* CSS rules for medium-sized screens */
-    body {
-        overflow-x: hidden;
-    }
+	.heading {
+		top: 30vh;
+		left: 15vw;
+		font-size: 20px;
+	}
 
-    .heading {
-        top: 30vh;
-        left: 15vw;
-        font-size: 20px;
-    }
-
-
+	/* #head-p span {
+		display: inline-block;
+		width: fit-content;
+		padding-right: 47%;
+	} */
 }
 
 /* For screens larger than 1024px (typical for desktops) */
 @media (min-width: 1025px) {
-
-    /* CSS rules for large screens */
-
+	/* CSS rules for large screens */
+	/* #head-p span {
+		display: inline-block;
+		width: fit-content;
+		padding-right: 47%;
+	} */
 }
-
 
 /* main section --  */
 
-.main{
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    top: 100vh;
-    z-index: 5;
-    background-color: rgb(3, 5, 5);
+.main {
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 100vh;
+	z-index: 5;
+	background-color: rgb(3, 5, 5);
 }
